@@ -91,9 +91,9 @@ app.get('/products',(req,res)=>{
   
 })
 
-app.get('*',(req,res)=>{
-    res.send('my 404 page')
-})
+// app.get('*',(req,res)=>{
+//     res.send('my 404 page')
+// })
 
 
 
