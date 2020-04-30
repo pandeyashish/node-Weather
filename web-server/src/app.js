@@ -17,7 +17,7 @@ console.log(viewPath)
 
 app.set('views',viewPath)
 app.set('view engine','hbs')
-app.use(express.static('public'))
+app.use(express.static('web-server/public'))
 
 
 app.get('/weather',(req,res)=>{
