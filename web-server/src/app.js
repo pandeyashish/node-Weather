@@ -6,7 +6,7 @@ const request = require("request")
 const getForcastReport = require('./utils/forcast')
 const getGeoCode = require('./utils/utils')
 
-
+const port = process.env.PORT || 3000
 //console.log(__dirname)
 const path1 = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../templates/views')
@@ -98,6 +98,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is running on port 3000')
 })
